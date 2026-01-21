@@ -18,8 +18,8 @@ body{
     padding: 20px;
     border-radius: 16px;
     background:transparent;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(500px);
 }
 input{
     width: 300px;
@@ -48,7 +48,7 @@ button{
     color: #ffffff;
     font-size: 24px;
     cursor: pointer;
-    /* transition: 0.3s; */
+    transition: 0.3s;
     box-shadow: -8px -8px 16px #5f2c82,
                 8px 8px 16px #49a09d;
               
@@ -61,6 +61,10 @@ button:hover{
     transition: 0.3s;      /* transform property */
     
 }
+button:active{
+    transform: scale(0.98);
+    transition: 0.1s;
+}
 .equalto{
     background-color: #18aaa5;
     width: 83px;
@@ -68,7 +72,7 @@ button:hover{
     
 }
 .operator{
-    color: #54fb7b;
+    color: #07f53e;
 }
 #zero{
     width: 120px;
