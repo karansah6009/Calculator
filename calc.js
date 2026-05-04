@@ -1,8 +1,14 @@
 let input = document.getElementById('inputBox');
 let buttons = document.querySelectorAll('button')
-
+const toggle = document.getElementById("toggle");
 let string = "";
 let arr = Array.from(buttons);
+
+
+toggle.addEventListener("change", () => {
+    document.body.classList.toggle("dark");
+  }); 
+  
 arr.forEach(button => {
     button.addEventListener('click', (e) => {
         if (e.target.innerHTML == '=') {

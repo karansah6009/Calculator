@@ -5,6 +5,20 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+navbar{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: transparent;    
+    display: flex;
+    justify-content: space-around;
+}
+navbar h1{
+    color: #ffffff;
+    font-size: 24px;
+    padding-top: 20px;
+}
 body{
     width: 100%;
     height: 100vh;
@@ -57,9 +71,9 @@ button:hover{
     background-color: #91e5e2;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
     color: #000000;
-    transform: scale(1.1);
+    transform: scale(1.07);
     transition: 0.3s;      /* transform property */
-    
+    border-radius: 30%;
 }
 button:active{
     transform: scale(0.98);
@@ -77,4 +91,61 @@ button:active{
 #zero{
     width: 120px;
     border-radius: 40px;
+}
+
+ /* Toggle Switch Styles */
+/* DARK THEME */
+body.dark {
+  background: black;
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2em;
+  align-items: center;
+}
+
+
+.label:hover{
+    cursor: pointer;
+}
+.switch-wrap {
+  cursor: pointer;
+  background: #15273b;
+  padding: 5px;
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  position: relative;
+}
+
+.switch-wrap input {
+  position: absolute;
+  opacity: 0;
+}
+
+.switch {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 0fr 1fr 1fr;
+  transition: 0.3s;
+}
+
+.switch::after {
+  content: '';
+  border-radius: 50%;
+  background: #ccc;
+  grid-column: 2;
+  transition: 0.3s;
+}
+
+/* ON STATE */
+input:checked + .switch {
+  grid-template-columns: 1fr 1fr 0fr;
+}
+
+input:checked + .switch::after {
+  background-color: #52cf71;
 }

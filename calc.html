@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,17 @@
     <link rel="stylesheet" href="calc.css">
     <script src="calc.js" defer></script>
 </head>
+
 <body>
+    <navbar>
+        <h1>Calculator</h1>
+        <label class="wrapper">
+            <div class="switch-wrap">
+                <input type="checkbox" id="toggle" />
+                <div class="switch"></div>
+            </div>
+        </label>
+    </navbar>
     <div class="calculator">
         <input id="inputBox" type="text" placeholder="0">
         <div>
@@ -41,4 +52,5 @@
         </div>
     </div>
 </body>
+
 </html>
